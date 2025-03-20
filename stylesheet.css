@@ -1,0 +1,133 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #f06, #48C9B0); /* Cool background gradient */
+  color: white;
+}
+
+.heading {
+  text-align: center;
+  padding: 20px;
+}
+
+h1, h3, h5 {
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  font-size: 4.5rem; /* Increase font size */
+}
+
+h3 {
+  font-size: 2.5rem; /* Increase font size */
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 1.5rem; /* Increase font size */
+}
+
+/* Section Styles */
+.section {
+  padding: 30px 10%;
+  text-align: center;
+}
+
+.section img {
+  width: 100%;
+  max-width: 400px; /* Set consistent max-width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+  display: block;
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+.section img:hover {
+  transform: scale(1.1); /* Image zoom effect on hover */
+}
+
+.section p {
+  font-size: 1.5rem; /* Increase paragraph font size */
+  line-height: 1.6;
+  margin-top: 20px;
+}
+
+.book {
+  text-align: center;
+  padding: 20px;
+}
+
+.book img {
+  width: 100%;
+  max-width: 600px; /* Increase max-width for larger images */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+  display: block;
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+.book img:hover {
+  transform: scale(1.1); /* Book cover zoom effect */
+}
+
+.book p {
+  font-size: 1.6rem; /* Increase font size */
+  line-height: 1.8;
+  max-width: 900px; /* Limit the width */
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid #fff;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  font-size: 1.2rem; /* Increase footer font size */
+}
+
+/* Animation Styles */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply fade-in effect to sections */
+.section {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.book {
+  animation: fadeIn 2s ease-in-out;
+}
+
+h1, h3, h5 {
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Parallax Effect for Background */
+body {
+  background-attachment: fixed;
+}
